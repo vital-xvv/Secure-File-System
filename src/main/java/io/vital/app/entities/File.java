@@ -2,7 +2,10 @@ package io.vital.app.entities;
 
 import java.util.List;
 
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import io.vital.app.jackson_adapters.FileDeserializer;
+import io.vital.app.jackson_adapters.FileSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,20 +13,25 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonDeserialize(using = FileDeserializer.class)
+@JsonSerialize(using = FileSerializer.class)
 public class File {
     private Long id;
-    @SerializedName("filename")
     private String fileName;
     private Long size;
     private String extension;
-    //@SerializedName("language")
     private List<Language> languages;
-    @SerializedName("year_published")
     private int publishYear;
     private String owner;
 
-    enum Language {
-        ENGLISH, UKRAINIAN, RUSSIAN,
-        GERMAN, FRENCH, SPANISH
+    public enum Language {
+        ENGLISH, UKRAINIAN, RUSSIAN, GERMAN,
+        FRENCH, SPANISH, DUTCH, POLISH, JAPANESE,
+        CHINESE, KOREAN, ITALIAN, PORTUGUESE;
+
+        public String getPrettyName() {
+            String str = this.toString().toLowerCase();
+            return str.substring(0, 1).toUpperCase() + str.substring(1);
+        }
     }
 }
