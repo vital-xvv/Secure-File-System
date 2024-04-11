@@ -1,5 +1,6 @@
 package io.vital.app.entities;
 
+import java.util.Arrays;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -33,5 +34,12 @@ public class File {
             String str = this.toString().toLowerCase();
             return str.substring(0, 1).toUpperCase() + str.substring(1);
         }
+    }
+
+    public static List<Language> deserializeLanguages(String array) {
+        return Arrays.stream(array.split(" *, *"))
+                .filter(s -> !s.isBlank())
+                .map(el -> File.Language.valueOf(el.toUpperCase()))
+                .toList();
     }
 }

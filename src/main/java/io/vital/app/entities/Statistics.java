@@ -18,6 +18,10 @@ public class Statistics {
     @JacksonXmlProperty(localName = "item")
     private final List<Item> statistics = new ArrayList<>();
 
+    public static Statistics empty(){
+        return new Statistics();
+    }
+
     public void addItem(Item item) {
         if (statistics.stream().noneMatch(t -> t.getValue().equals(item.getValue())))
             statistics.add(item);
@@ -30,6 +34,4 @@ public class Statistics {
     public void sorted() {
         statistics.sort(Item::compareTo);
     }
-
-
 }

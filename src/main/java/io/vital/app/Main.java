@@ -1,22 +1,29 @@
 package io.vital.app;
 
-import io.vital.app.entities.File;
-import io.vital.app.json.JsonParser;
-import io.vital.app.statistics.FileStatistics;
+import io.vital.app.entities.Statistics;
+import io.vital.app.json.CustomJsonParser;
 
 import java.io.IOException;
-import java.util.List;
+import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        JsonParser jsonParser = new JsonParser();
-        String filePath = "src/main/resources/files_json/double_language.json";
+        CustomJsonParser jsonParser = new CustomJsonParser();
 
-        List<File> files = jsonParser.parseFilesFromFile(filePath);
+        String folderPath = args[0];
+        String value = args[1];
+        String xmlPath = args[2];
 
-        //jsonParser.prettyPrint(files);
-        //jsonParser.prettyPrint(jsonParser.getStatisticsByValue(files, "extension"));
+        Statistics statistics = jsonParser.parseFilesInFolderEfficient(folderPath, value);
 
-        jsonParser.prettyXmlPrint(FileStatistics.getStatisticsByValue(files, "owner", true));
+        statistics.sorted();
+
+        jsonParser.prettyXmlPrintInFile(xmlPath, statistics, value);
+
+        String statisticsFilePath = Path.of(String.format("%s/statistics_by_%s.xml",xmlPath, value)).toString();
+
+        System.out.println("- - - - - - - - - - - - - - - - -\n");
+        System.out.printf("File %s has been created%n", statisticsFilePath);
+        System.out.println("\n- - - - - - - - - - - - - - - - -");
     }
 }

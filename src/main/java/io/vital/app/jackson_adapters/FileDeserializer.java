@@ -7,7 +7,6 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import io.vital.app.entities.File;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 public class FileDeserializer extends StdDeserializer<File> {
@@ -29,12 +28,8 @@ public class FileDeserializer extends StdDeserializer<File> {
         String fileName = node.get("filename").asText();
         long size = node.get("size").longValue();
         String extension = node.get("extension").asText();
-        List<File.Language> languages = Arrays
-                .stream(node.get("language").asText().split(" *, *"))
-                .filter(s -> !s.isBlank())
-                .map(el -> File.Language.valueOf(el.toUpperCase()))
-                .toList();
-        int publishYear = node.get("id").intValue();
+        List<File.Language> languages = File.deserializeLanguages(node.get("language").asText());
+        int publishYear = node.get("year_published").intValue();
         String owner = node.get("owner").asText();
 
         return new File(id, fileName, size, extension, languages, publishYear, owner);
