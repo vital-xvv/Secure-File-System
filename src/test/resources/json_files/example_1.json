@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "filename": "document_one.pdf",
+    "size": 10485760,
+    "extension": "pdf",
+    "language": "English,French",
+    "year_published": 2020,
+    "owner": "John Doe"
+  },
+  {
+    "id": 2,
+    "filename": "document_two.docx",
+    "size": 5242880,
+    "extension": "docx",
+    "language": "Spanish",
+    "year_published": 2018,
+    "owner": "Alice Smith"
+  },
+  {
+    "id": 3,
+    "filename": "document_three.txt",
+    "size": 3145728,
+    "extension": "txt",
+    "language": "Ukrainian,Russian",
+    "year_published": 2019,
+    "owner": "Michael Johnson"
+  }
+]

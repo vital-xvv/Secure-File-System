@@ -1,0 +1,65 @@
+[
+  {
+    "id" : 81,
+    "filename": "exemple_document.pdf",
+    "size": 5120,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2023,
+    "owner": "Jean Dupont"
+  },
+  {
+    "id" : 82,
+    "filename": "documento_de_investigacion.docx",
+    "size": 4096,
+    "extension": "docx",
+    "language": "Spanish, English",
+    "year_published": 2022,
+    "owner": "Maria Garcia"
+  },
+  {
+    "id" : 83,
+    "filename": "дослідницька_робота.docx",
+    "size": 8192,
+    "extension": "docx",
+    "language": "Ukrainian, Russian",
+    "year_published": 2024,
+    "owner": "Іван Петров"
+  },
+  {
+    "id" : 33,
+    "filename": "rapport_annuel.doc",
+    "size": 7168,
+    "extension": "doc",
+    "language": "French",
+    "year_published": 2021,
+    "owner": "Marie Leclerc"
+  },
+  {
+    "id" : 34,
+    "filename": "informe_anual.pdf",
+    "size": 10240,
+    "extension": "pdf",
+    "language": "Spanish",
+    "year_published": 2020,
+    "owner": "Carlos Rodriguez"
+  },
+  {
+    "id" : 35,
+    "filename": "довідник_українця.docx",
+    "size": 6144,
+    "extension": "docx",
+    "language": "Ukrainian",
+    "year_published": 2019,
+    "owner": "Олександра Ковальчук"
+  },
+  {
+    "id" : 7,
+    "filename": "дисертація.docx",
+    "size": 81267,
+    "extension": "pdf",
+    "language": "Ukrainian, Russian",
+    "year_published": 2012,
+    "owner": "Іван Петров"
+  }
+]

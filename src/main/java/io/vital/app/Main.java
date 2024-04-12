@@ -2,13 +2,14 @@ package io.vital.app;
 
 import io.vital.app.entities.Statistics;
 import io.vital.app.json.CustomJsonParser;
+import io.vital.app.json.implementation.CustomJsonParserImpl;
 
 import java.io.IOException;
 import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        CustomJsonParser jsonParser = new CustomJsonParser();
+        CustomJsonParser jsonParser = new CustomJsonParserImpl();
 
         String folderPath = args[0];
         String value = args[1];

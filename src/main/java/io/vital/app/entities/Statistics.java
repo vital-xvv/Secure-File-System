@@ -4,12 +4,10 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@NoArgsConstructor
 @Data
 @JacksonXmlRootElement(localName = "statistics")
 public class Statistics {
@@ -23,6 +21,7 @@ public class Statistics {
     }
 
     public void addItem(Item item) {
+        if(item.getValue() == null) return;
         if (statistics.stream().noneMatch(t -> t.getValue().equals(item.getValue())))
             statistics.add(item);
         else statistics
@@ -33,5 +32,9 @@ public class Statistics {
 
     public void sorted() {
         statistics.sort(Item::compareTo);
+    }
+
+    public int size(){
+        return statistics.size();
     }
 }

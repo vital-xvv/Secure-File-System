@@ -1,0 +1,92 @@
+[
+  {
+    "id": 4,
+    "filename": "report_four.doc",
+    "size": 2097152,
+    "extension": "doc",
+    "language": "German,Italian",
+    "year_published": 2021,
+    "owner": "Sophia Lee"
+  },
+  {
+    "id": 5,
+    "filename": "presentation_five.pptx",
+    "size": 15728640,
+    "extension": "pptx",
+    "language": "Japanese",
+    "year_published": 2017,
+    "owner": "David Brown"
+  },
+  {
+    "id": 6,
+    "filename": "thesis_six.tex",
+    "size": 31457280,
+    "extension": "tex",
+    "language": "English",
+    "year_published": 2022,
+    "owner": "Emily Wilson"
+  },
+  {
+    "id": 7,
+    "filename": "code_seven.py",
+    "size": 1048576,
+    "extension": "py",
+    "language": "English",
+    "year_published": 2023,
+    "owner": "Daniel Taylor"
+  },
+  {
+    "id": 8,
+    "filename": "manual_eight.pdf",
+    "size": 5242880,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2020,
+    "owner": "Olivia Garcia"
+  },
+  {
+    "id": 9,
+    "filename": "article_nine.txt",
+    "size": 2097152,
+    "extension": "txt",
+    "language": "Russian",
+    "year_published": 2019,
+    "owner": "Liam Martinez"
+  },
+  {
+    "id": 10,
+    "filename": "guide_ten.docx",
+    "size": 4194304,
+    "extension": "docx",
+    "language": "Spanish,Portuguese",
+    "year_published": 2021,
+    "owner": "Ava Anderson"
+  },
+  {
+    "id": 11,
+    "filename": "novel_eleven.epub",
+    "size": 15728640,
+    "extension": "epub",
+    "language": "English",
+    "year_published": 2018,
+    "owner": "Noah Thomas"
+  },
+  {
+    "id": 12,
+    "filename": "research_twelve.csv",
+    "size": 1048576,
+    "extension": "csv",
+    "language": "Chinese",
+    "year_published": 2020,
+    "owner": "Emma Hernandez"
+  },
+  {
+    "id": 13,
+    "filename": "document_thirteen.txt",
+    "size": 8388608,
+    "extension": "txt",
+    "language": "Japanese,Korean",
+    "year_published": 2019,
+    "owner": "William Wilson"
+  }
+]

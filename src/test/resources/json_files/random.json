@@ -1,0 +1,29 @@
+[
+  {
+    "id" : 1,
+    "filename": "exemple_document.pdf",
+    "size": 5120,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2023,
+    "owner": "Jean Dupont"
+  },
+  {
+    "id" : 2,
+    "filename": "documento_de_investigacion.docx",
+    "size": 4096,
+    "extension": "docx",
+    "language": "Spanish",
+    "year_published": 2022,
+    "owner": "Maria Garcia"
+  },
+  {
+    "id" : 3,
+    "filename": "дослідницька_робота.docx",
+    "size": 8192,
+    "extension": "docx",
+    "language": "Ukrainian",
+    "year_published": 2024,
+    "owner": "Іван Петров"
+  }
+]

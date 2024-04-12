@@ -1,0 +1,29 @@
+[
+  {
+    "id" : 23,
+    "filename": "example_document.pdf",
+    "size": 5120,
+    "extension": "pdf",
+    "language": "English",
+    "year_published": 2023,
+    "owner": "John Doe"
+  },
+  {
+    "id" : 13,
+    "filename": "research_paper.docx",
+    "size": 4096,
+    "extension": "docx",
+    "language": "English",
+    "year_published": 2022,
+    "owner": "Jane Smith"
+  },
+  {
+    "id" : 45,
+    "filename": "presentation.pptx",
+    "size": 10240,
+    "extension": "pptx",
+    "language": "English",
+    "year_published": 2024,
+    "owner": "Alex Johnson"
+  }
+]

@@ -22,7 +22,7 @@ public class File {
     private Long size;
     private String extension;
     private List<Language> languages;
-    private int publishYear;
+    private Integer publishYear;
     private String owner;
 
     public enum Language {
