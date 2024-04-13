@@ -97,13 +97,13 @@ public class CustomJsonParserTest {
 
         //then
         Assert.assertEquals("English", statistics.getStatistics().get(0).getValue());
-        Assert.assertEquals(3L, (long)statistics.getStatistics().get(0).getCount());
+        Assert.assertEquals(3, (long)statistics.getStatistics().get(0).getCount());
         Assert.assertEquals("Japanese", statistics.getStatistics().get(1).getValue());
-        Assert.assertEquals(2L, (long)statistics.getStatistics().get(1).getCount());
+        Assert.assertEquals(2, (long)statistics.getStatistics().get(1).getCount());
         Assert.assertEquals("German", statistics.getStatistics().get(2).getValue());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(2).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(2).getCount());
         Assert.assertEquals("Italian", statistics.getStatistics().get(3).getValue());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(3).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(3).getCount());
         Assert.assertEquals(10, statistics.size());
         //...
     }
@@ -127,8 +127,7 @@ public class CustomJsonParserTest {
     }
 
     @Test
-    public void testFolderWithJsonFilesParsingUsingJacksonStreamingAPIAndSortedStatisticsCreationByExtensionWithoutUsingInMemoryCollections()
-            throws IOException {
+    public void testFolderWithJsonFilesParsingUsingJacksonStreamingAPIAndSortedStatisticsCreationByExtensionWithoutUsingInMemoryCollections() {
         //given
         String folderPath = "src/test/resources/json_folder_for_test";
 
@@ -150,15 +149,15 @@ public class CustomJsonParserTest {
         Assert.assertEquals("csv", statistics.getStatistics().get(8).getValue());
 
             //Counters
-        Assert.assertEquals(6L, (long)statistics.getStatistics().get(0).getCount());
-        Assert.assertEquals(5L, (long)statistics.getStatistics().get(1).getCount());
-        Assert.assertEquals(2L, (long)statistics.getStatistics().get(2).getCount());
-        Assert.assertEquals(2L, (long)statistics.getStatistics().get(3).getCount());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(4).getCount());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(5).getCount());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(6).getCount());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(7).getCount());
-        Assert.assertEquals(1L, (long)statistics.getStatistics().get(8).getCount());
+        Assert.assertEquals(6, (long)statistics.getStatistics().get(0).getCount());
+        Assert.assertEquals(5, (long)statistics.getStatistics().get(1).getCount());
+        Assert.assertEquals(2, (long)statistics.getStatistics().get(2).getCount());
+        Assert.assertEquals(2, (long)statistics.getStatistics().get(3).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(4).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(5).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(6).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(7).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(8).getCount());
     }
 
     @Test

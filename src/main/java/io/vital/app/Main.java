@@ -15,16 +15,19 @@ public class Main {
         String value = args[1];
         String xmlPath = args[2];
 
-        Statistics statistics = jsonParser.parseFilesInFolderEfficient(folderPath, value);
+//        String folderPath = "src/main/resources/files_json";
+//        String value = "size";
+//        String xmlPath = "src/main/resources/statistics_xml";
 
+        Statistics statistics = jsonParser.parseFilesInFolderEfficientConcurrent(folderPath, value, 5);
         statistics.sorted();
 
         jsonParser.prettyXmlPrintInFile(xmlPath, statistics, value);
 
         String statisticsFilePath = Path.of(String.format("%s/statistics_by_%s.xml",xmlPath, value)).toString();
 
-        System.out.println("- - - - - - - - - - - - - - - - -\n");
-        System.out.printf("File %s has been created%n", statisticsFilePath);
-        System.out.println("\n- - - - - - - - - - - - - - - - -");
+        System.out.println("\n- - - - - - - - - - - - - - - - -\n");
+        System.out.printf("File %s has been created.%n", statisticsFilePath);
+        System.out.println("\n- - - - - - - - - - - - - - - - -\n");
     }
 }
