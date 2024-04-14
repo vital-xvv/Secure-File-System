@@ -1,0 +1,65 @@
+[
+  {
+    "id": 30,
+    "filename": "article_thirty.docx",
+    "size": 11264,
+    "extension": "docx",
+    "language": "English",
+    "year_published": 2019,
+    "owner": "Emily Johnson"
+  },
+  {
+    "id": 31,
+    "filename": "presentation_thirtyone.ppt",
+    "size": 13312,
+    "extension": "ppt",
+    "language": "Spanish, French",
+    "year_published": 2020,
+    "owner": "Pablo López"
+  },
+  {
+    "id": 32,
+    "filename": "manual_thirtytwo.pdf",
+    "size": 11264,
+    "extension": "pdf",
+    "language": "German, English",
+    "year_published": 2018,
+    "owner": "Hans Schmidt"
+  },
+  {
+    "id": 33,
+    "filename": "code_thirtythree.java",
+    "size": 14336,
+    "extension": "java",
+    "language": "English",
+    "year_published": 2021,
+    "owner": "David Wilson"
+  },
+  {
+    "id": 34,
+    "filename": "thesis_thirtyfour.tex",
+    "size": 11264,
+    "extension": "tex",
+    "language": "Spanish",
+    "year_published": 2023,
+    "owner": "Sofía García"
+  },
+  {
+    "id": 35,
+    "filename": "article_thirtyfive.txt",
+    "size": 12288,
+    "extension": "txt",
+    "language": "French, German",
+    "year_published": 2017,
+    "owner": "Jean Dupont"
+  },
+  {
+    "id": 36,
+    "filename": "manual_thirtysix.doc",
+    "size": 13312,
+    "extension": "doc",
+    "language": "English, Russian",
+    "year_published": 2022,
+    "owner": "Nikolai Ivanov"
+  }
+]

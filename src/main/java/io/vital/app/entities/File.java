@@ -11,6 +11,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Secondary entity in relation Many-to-One with {@link User}
+ * This class serves as a holder for deserialized file objects from json files
+ * @author Vitalii Huzii
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,14 +33,24 @@ public class File {
     public enum Language {
         ENGLISH, UKRAINIAN, RUSSIAN, GERMAN,
         FRENCH, SPANISH, DUTCH, POLISH, JAPANESE,
-        CHINESE, KOREAN, ITALIAN, PORTUGUESE;
+        CHINESE, KOREAN, ITALIAN, PORTUGUESE, PYTHON, JAVA;
 
+        /**
+         * Converts {@link File.Language} object into pretty string:
+         * Example: JAVA -> Java, ENGLISH -> English
+         * @return Pretty language string
+         */
         public String getPrettyName() {
             String str = this.toString().toLowerCase();
             return str.substring(0, 1).toUpperCase() + str.substring(1);
         }
     }
 
+    /**
+     * Converts a string with the specified format into list of language objects
+     * @param array String of sequence of languages like "Japanese, Ukrainian, English"
+     * @return Returns List<Language> {@link File.Language}
+     */
     public static List<Language> deserializeLanguages(String array) {
         return Arrays.stream(array.split(" *, *"))
                 .filter(s -> !s.isBlank())

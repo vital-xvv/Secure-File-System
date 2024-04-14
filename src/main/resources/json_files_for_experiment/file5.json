@@ -1,0 +1,47 @@
+[
+  {
+    "id": 49,
+    "filename": "presentation_fortynine.pptx",
+    "size": 13568,
+    "extension": "pptx",
+    "language": "French",
+    "year_published": 2020,
+    "owner": "Marie Lefebvre"
+  },
+  {
+    "id": 50,
+    "filename": "article_fifty.pdf",
+    "size": 12288,
+    "extension": "pdf",
+    "language": "Spanish, English",
+    "year_published": 2019,
+    "owner": "Pedro Hernández"
+  },
+  {
+    "id": 51,
+    "filename": "code_fiftyone.py",
+    "size": 13312,
+    "extension": "py",
+    "language": "English",
+    "year_published": 2021,
+    "owner": "Emily Johnson"
+  },
+  {
+    "id": 52,
+    "filename": "thesis_fiftytwo.tex",
+    "size": 14336,
+    "extension": "tex",
+    "language": "German",
+    "year_published": 2023,
+    "owner": "Maximilian Schmitz"
+  },
+  {
+    "id": 53,
+    "filename": "article_fiftythree.txt",
+    "size": 12288,
+    "extension": "txt",
+    "language": "Italian",
+    "year_published": 2017,
+    "owner": "Giorgio Ferrari"
+  }
+]

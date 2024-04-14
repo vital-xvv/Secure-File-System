@@ -161,6 +161,41 @@ public class CustomJsonParserTest {
     }
 
     @Test
+    public void testFolderWithJsonFilesParsingConcurrentUsingJacksonStreamingAPIAndSortedStatisticsCreationByExtensionWithoutUsingInMemoryCollections() {
+        //given
+        String folderPath = "src/test/resources/json_folder_for_test";
+        int numOfThreadsDefault = 2;
+
+        //when
+        Statistics statistics = parser.parseFilesInFolderEfficientConcurrent(folderPath, "extension", numOfThreadsDefault);
+        statistics.sorted();
+
+        //then
+        //Positional
+        Assert.assertEquals(9, statistics.size());
+        Assert.assertEquals("docx", statistics.getStatistics().get(0).getValue());
+        Assert.assertEquals("pdf", statistics.getStatistics().get(1).getValue());
+        Assert.assertEquals("doc", statistics.getStatistics().get(2).getValue());
+        Assert.assertEquals("txt", statistics.getStatistics().get(3).getValue());
+        Assert.assertEquals("pptx", statistics.getStatistics().get(4).getValue());
+        Assert.assertEquals("tex", statistics.getStatistics().get(5).getValue());
+        Assert.assertEquals("py", statistics.getStatistics().get(6).getValue());
+        Assert.assertEquals("epub", statistics.getStatistics().get(7).getValue());
+        Assert.assertEquals("csv", statistics.getStatistics().get(8).getValue());
+
+        //Counters
+        Assert.assertEquals(6, (long)statistics.getStatistics().get(0).getCount());
+        Assert.assertEquals(5, (long)statistics.getStatistics().get(1).getCount());
+        Assert.assertEquals(2, (long)statistics.getStatistics().get(2).getCount());
+        Assert.assertEquals(2, (long)statistics.getStatistics().get(3).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(4).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(5).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(6).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(7).getCount());
+        Assert.assertEquals(1, (long)statistics.getStatistics().get(8).getCount());
+    }
+
+    @Test
     public void testXMlFileWithSortedStatisticsByLanguageIsCreatedAfterFolderParsing() throws IOException {
         //given
         String folderPath = "src/test/resources/json_folder_for_test";

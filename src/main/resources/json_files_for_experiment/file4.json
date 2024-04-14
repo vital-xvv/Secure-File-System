@@ -1,0 +1,110 @@
+[
+  {
+    "id": 37,
+    "filename": "presentation_thirtyseven.pptx",
+    "size": 12288,
+    "extension": "pptx",
+    "language": "English",
+    "year_published": 2020,
+    "owner": "Alice Smith"
+  },
+  {
+    "id": 38,
+    "filename": "article_thirtyeight.pdf",
+    "size": 13312,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2019,
+    "owner": "Marie Leclerc"
+  },
+  {
+    "id": 39,
+    "filename": "code_thirtynine.py",
+    "size": 14336,
+    "extension": "py",
+    "language": "English",
+    "year_published": 2021,
+    "owner": "John Anderson"
+  },
+  {
+    "id": 40,
+    "filename": "manual_fourty.docx",
+    "size": 12288,
+    "extension": "docx",
+    "language": "Spanish, English",
+    "year_published": 2018,
+    "owner": "Carlos Rodriguez"
+  },
+  {
+    "id": 41,
+    "filename": "thesis_forty.tex",
+    "size": 13312,
+    "extension": "tex",
+    "language": "German",
+    "year_published": 2023,
+    "owner": "Anna Müller"
+  },
+  {
+    "id": 42,
+    "filename": "article_fortytwo.txt",
+    "size": 11264,
+    "extension": "txt",
+    "language": "Italian",
+    "year_published": 2017,
+    "owner": "Giuseppe Rossi"
+  },
+  {
+    "id": 43,
+    "filename": "presentation_fortythree.ppt",
+    "size": 14336,
+    "extension": "ppt",
+    "language": "English",
+    "year_published": 2022,
+    "owner": "Michael Johnson"
+  },
+  {
+    "id": 44,
+    "filename": "manual_fortyfour.pdf",
+    "size": 13312,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2020,
+    "owner": "Sophie Dubois"
+  },
+  {
+    "id": 45,
+    "filename": "code_fortyfive.java",
+    "size": 12288,
+    "extension": "java",
+    "language": "English",
+    "year_published": 2019,
+    "owner": "Mark Wilson"
+  },
+  {
+    "id": 46,
+    "filename": "thesis_fortysix.tex",
+    "size": 14336,
+    "extension": "tex",
+    "language": "Spanish",
+    "year_published": 2021,
+    "owner": "Elena García"
+  },
+  {
+    "id": 47,
+    "filename": "article_fortyseven.docx",
+    "size": 12288,
+    "extension": "docx",
+    "language": "German",
+    "year_published": 2018,
+    "owner": "Thomas Müller"
+  },
+  {
+    "id": 48,
+    "filename": "manual_fortyeight.txt",
+    "size": 13312,
+    "extension": "txt",
+    "language": "English, Russian",
+    "year_published": 2023,
+    "owner": "Ivan Petrov"
+  }
+]

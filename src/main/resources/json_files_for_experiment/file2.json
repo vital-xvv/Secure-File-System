@@ -1,0 +1,56 @@
+[
+  {
+    "id": 24,
+    "filename": "manual_twentyfour.pdf",
+    "size": 10240,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2019,
+    "owner": "Sophie Martin"
+  },
+  {
+    "id": 25,
+    "filename": "article_twentyfive.txt",
+    "size": 12288,
+    "extension": "txt",
+    "language": "German",
+    "year_published": 2020,
+    "owner": "Lukas Müller"
+  },
+  {
+    "id": 26,
+    "filename": "presentation_twentysix.pptx",
+    "size": 10240,
+    "extension": "pptx",
+    "language": "Spanish",
+    "year_published": 2022,
+    "owner": "María García"
+  },
+  {
+    "id": 27,
+    "filename": "code_twentyseven.py",
+    "size": 8192,
+    "extension": "py",
+    "language": "English",
+    "year_published": 2023,
+    "owner": "James Smith"
+  },
+  {
+    "id": 28,
+    "filename": "manual_twentyeight.doc",
+    "size": 12288,
+    "extension": "doc",
+    "language": "Russian,Ukrainian",
+    "year_published": 2018,
+    "owner": "Ivan Petrov"
+  },
+  {
+    "id": 29,
+    "filename": "thesis_twentynine.tex",
+    "size": 10240,
+    "extension": "tex",
+    "language": "French",
+    "year_published": 2021,
+    "owner": "Camille Dupont"
+  }
+]

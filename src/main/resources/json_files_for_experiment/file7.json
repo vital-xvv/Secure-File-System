@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "document_one.docx",
+    "size": 8192,
+    "extension": "docx",
+    "language": "English",
+    "year_published": 2018,
+    "owner": "John Smith"
+  },
+  {
+    "filename": "document_one.docx",
+    "size": 7168,
+    "extension": "docx",
+    "language": "Spanish",
+    "year_published": 2020,
+    "owner": "Maria Rodriguez"
+  },
+  {
+    "filename": "report_two.pdf",
+    "size": 5632,
+    "extension": "pdf",
+    "language": "French",
+    "year_published": 2019,
+    "owner": "Sophie Dubois"
+  },
+  {
+    "filename": "presentation_two.pptx",
+    "size": 9728,
+    "extension": "pptx",
+    "language": "English, French",
+    "year_published": 2017,
+    "owner": "Emily Johnson"
+  },
+  {
+    "filename": "code_three.py",
+    "size": 8192,
+    "extension": "py",
+    "language": "Python",
+    "year_published": 2021,
+    "owner": "Michael Brown"
+  },
+  {
+    "filename": "article_four.pdf",
+    "size": 6656,
+    "extension": "pdf",
+    "language": "English",
+    "year_published": 2020,
+    "owner": "Sophia Lee"
+  },
+  {
+    "filename": "presentation_four.pptx",
+    "size": 8704,
+    "extension": "pptx",
+    "language": "English, Spanish",
+    "year_published": 2019,
+    "owner": "Juan Perez"
+  }
+]

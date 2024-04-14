@@ -33,16 +33,28 @@ public class CustomJsonParserImpl implements CustomJsonParser {
         xmlMapper.enable(SerializationFeature.INDENT_OUTPUT);
     }
 
+    /**
+     * Converts an array of json file objects into a Java List of Files @{@link File}
+     * Method uses basic capabilities of Jackson library
+     * @see com.fasterxml.jackson.databind.ObjectMapper
+     * @see io.vital.app.jackson_adapters.FileDeserializer
+     * @param filename File location to deserialize
+     * @return Java list of deserialized file objects
+     * @throws IOException
+     */
     public List<File> parseFilesFromFile(String filename) throws IOException {
         return Arrays.asList(mapper.readValue(new BufferedReader(new FileReader(filename)), File[].class));
     }
 
+    /**
+     * Returns a pretty string of a json serialized Java object
+     * @see io.vital.app.jackson_adapters.FileSerializer
+     * @param json Object to serialize
+     * @return Pretty JSON string
+     * @throws JsonProcessingException
+     */
     public String prettyJsonPrint(Object json) throws JsonProcessingException {
         return writer.writeValueAsString(json);
-    }
-
-    public String prettyXmlPrint(Object xml) throws JsonProcessingException {
-        return xmlMapper.writeValueAsString(xml);
     }
 
     public void prettyXmlPrintInFile(String rootPath, Object xml, String value) throws IOException {
@@ -131,6 +143,11 @@ public class CustomJsonParserImpl implements CustomJsonParser {
         }
     }
 
+    /**
+     * Checks if a {@link java.io.File} is not a directory and has .json extension
+     * @param file File obj to check
+     * @return true if file corresponds to requirements
+     */
     private static boolean isJsonFile(java.io.File file){
         return !file.isDirectory() && file.getName().endsWith(".json");
     }

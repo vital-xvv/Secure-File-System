@@ -14,20 +14,27 @@ public class Main {
         String folderPath = args[0];
         String value = args[1];
         String xmlPath = args[2];
+        int threadNum = Integer.parseInt(args[3]);
 
-//        String folderPath = "src/main/resources/files_json";
-//        String value = "size";
+        //Dev app testing
+//        String folderPath = "src/main/resources/json_files_for_experiment";
+//        String value = "language";
 //        String xmlPath = "src/main/resources/statistics_xml";
+//        int threadNum = 8;
 
-        Statistics statistics = jsonParser.parseFilesInFolderEfficientConcurrent(folderPath, value, 5);
+        String statisticsFilePath = Path.of(String.format("%s/statistics_by_%s.xml",xmlPath, value)).toString();
+
+        long start = System.currentTimeMillis();
+        Statistics statistics = jsonParser.parseFilesInFolderEfficientConcurrent(folderPath, value, threadNum);
+        long end = System.currentTimeMillis();
+
         statistics.sorted();
 
         jsonParser.prettyXmlPrintInFile(xmlPath, statistics, value);
 
-        String statisticsFilePath = Path.of(String.format("%s/statistics_by_%s.xml",xmlPath, value)).toString();
-
+        //Pretty result print in console
+        System.out.printf("\n%d threads. Parsed folder %s for: %.3f sec\n", threadNum, folderPath, (end-start)/1000.0);
         System.out.println("\n- - - - - - - - - - - - - - - - -\n");
         System.out.printf("File %s has been created.%n", statisticsFilePath);
-        System.out.println("\n- - - - - - - - - - - - - - - - -\n");
     }
 }
